@@ -8,7 +8,6 @@ app.use('/', express.static('./public'));
 app.get('/:id', function (req, res, next) {
     const response = {};
     let param = req.params.id;
-    console.log(param);
     if (Number(param)) {
         param = parseInt(param, 10)
         response.natural = moment.unix(param).format("MMMM D, YYYY")
