@@ -12,8 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
-    "moments": "0.0.2",
-    "mongodb": "^2.2.35"
+    "moments": "0.0.2"
   },
   "devDependencies": {
     "nodemon": "^1.15.1"
