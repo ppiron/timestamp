@@ -6,10 +6,6 @@ const port = process.env.port || 3000;
 app.use('/', express.static('./public'));
 
 app.get('/:id', function (req, res, next) {
-    // console.log(req.get('accept-language').split(',')[0]);
-    // console.log(req.get('user-agent').match(/\(.*?(?=\))/)[0].slice(1));
-    // console.log(req.connection.remoteAddress);
-    //console.log(req.params.id);
     const response = {};
     let param = req.params.id;
     console.log(param);
@@ -27,7 +23,6 @@ app.get('/:id', function (req, res, next) {
             response.unix = null
         }
     }
-    //console.log(moment.unix(param).format("MMMM D, YYYY"))
     res.send(response)
 });
 
